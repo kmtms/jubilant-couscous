@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm cache clean --force
+      - run: npm cache verify
       - run: rm -rf node_modules
       - run: rm -f package-lock.json
       - run: npm install
