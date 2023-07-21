@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm cache clean --force
       - run: rm -rf node_modules
-      - run: rm package-lock.json
+      - run: rm -f package-lock.json
       - run: npm install
       - run: npm install netlify-cli -g
       - run: npm netlify -v
